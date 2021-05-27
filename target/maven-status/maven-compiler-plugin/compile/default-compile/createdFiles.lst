@@ -1,0 +1,12 @@
+com\techouts\bookStoreController\BookStoreController.class
+com\techouts\bookStore\Model\RomCom.class
+asdfghjkl\jdbc.class
+com\techouts\bookStore\Model\Thriller.class
+com\techouts\bookStore\Model\HistoricalFiction.class
+com\techouts\bookStore\Model\GenralStudies.class
+com\techouts\bookStoreDao\Operations.class
+com\techouts\bookStore\Model\Horror.class
+com\techouts\bookStore\Model\UserInfo.class
+com\techouts\bookStore\Model\ScienceFiction.class
+com\techouts\bookStore\Model\BookStoreCart.class
+com\techouts\bookStoreController\RegistrationController.class

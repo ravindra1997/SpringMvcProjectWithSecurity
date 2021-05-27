@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/jsp/Layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	<definition name="register" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/Registration.jsp"></put-attribute>
+	</definition>
+	<definition name="Login" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/Login.jsp"></put-attribute>
+	</definition>
+	<definition name="action" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/ActionView.jsp"></put-attribute>
+	</definition>
+	<definition name="sci" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/scienceView.jsp"></put-attribute>
+	</definition>
+	<definition name="thrill" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/thrillerView.jsp"></put-attribute>
+	</definition>
+	<definition name="hor" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/horrorView.jsp"></put-attribute>
+	</definition>
+	<definition name="rom" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/romcomView.jsp"></put-attribute>
+	</definition>
+	<definition name="gen" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/generalView.jsp"></put-attribute>
+	</definition>
+	<definition name="hisF" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/historicalFictionView.jsp"></put-attribute>
+	</definition>
+	<definition name="sale" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/salesview.jsp"></put-attribute>
+	</definition>
+	<definition name="cart" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/Cart.jsp"></put-attribute>
+	</definition>
+	<definition name="checks" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/checkout.jsp"></put-attribute>
+	</definition>
+	<definition name="reshop" extends="base.definition">
+		<put-attribute name="title" value="Welcome To MyStore"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/jsp/bookStoreMenu.jsp"></put-attribute>
+	</definition>
+
+</tiles-definitions>
