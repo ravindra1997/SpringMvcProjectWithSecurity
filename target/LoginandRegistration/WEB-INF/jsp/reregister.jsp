@@ -44,7 +44,7 @@ h2 {
 	</div>
 	<div>
 
-		<h2 style="text-align: center;">Invalid Properties</h2>
+		<h2 style="text-align: center; color: red;">Invalid Properties</h2>
 		<br> <h3><a href="regist.html" style="padding-left: 620px; text-decoration: none; color:red;">Re-Register
 			Please</a></h3>
 	</div>

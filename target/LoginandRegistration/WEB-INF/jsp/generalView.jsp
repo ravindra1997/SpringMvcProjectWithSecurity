@@ -23,7 +23,7 @@ th {
 </style>
 </head>
 <body style="background-color: #ffe6e6;">
-	<h2 style="text-align: center; color: black;">Thriller</h2>
+	<h2 style="text-align: center; color: black;">GeneralStudies</h2>
 	<table border="2" bordercolor="black" width="80%"
 		style="margin-left: 225px; margin-top: 50px;">
 		<tr>

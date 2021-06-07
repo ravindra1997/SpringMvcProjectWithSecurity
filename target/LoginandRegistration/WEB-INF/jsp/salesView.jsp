@@ -10,46 +10,51 @@
 <title>Insert title here</title>
 </head>
 <style>
-img {
-	
-}
-
-.bdetail {
-	
-}
-
-th {
-	padding-right: 50px;
+a {
+	text-decoration: none;
 }
 </style>
-</head>
-<body style="background-color: #ffe6e6;">
-	<h2 style="text-align: center; color: black;">Action And Adventure</h2>
-	<table border="2" bordercolor="black" width="80%"
-		style="margin-left: 225px; margin-top: 50px;">
-		<tr>
-			<th><u>YourBook</u></th>
-			<th style="padding-right: 10px;"><u>BookName</u></th>
-			<th style="padding-right: 10px;"><u>Author</u></th>
-			<th><u>Price</u></th>
-			<th><u>Buy</u></th>
-		</tr>
-		<c:forEach var="emps" items="${command}">
-			<tr>
-				<td><img src="data:image/jpg;base64,${emps.base64Image}"
-					width="150" height="200" style="padding-left: 20px;" /></td>
-				<td><h4>${emps.bookName}</h4></td>
-				<td style="padding-right: 20px;"><h4>${emps.bookAuthor}</h4></td>
-				<td><h4>${emps.bookPrice}</h4></td>
-				<td><h4>
-						<a href="${pageContext.request.contextPath}/check.html">Buy</a>
+<body>
+	<div align="center">
+		<h2 style="color: maroon;">Your Choosen Book Is Here</h2>
+		<table>
+			<c:forEach var="empsc" items="${command}">
+				<tr>
+					<td><img src="data:image/jpg;base64,${empsc.base64Image}"
+						width="120" height="200" style="padding-left: 20px;"
+						class="bdetail" /></td>
 
-					</h4></td>
+				</tr>
+			</c:forEach>
 
-				
-		</c:forEach>
-	</table>
+		</table>
+		<table>
+			<c:forEach var="empsc" items="${command}">
+				<tr>
+					<td><h4>${empsc.bookName}</h4></td>
+					<td style="padding-right: 20px; padding-left: 20px;"><h4>${empsc.bookAuthor}</h4></td>
+					<td><h4>${empsc.bookPrice}</h4></td>
+				</tr>
+			</c:forEach>
+		</table>
+		<table>
+			<c:forEach var="empsc" items="${command}">
+				<tr>
+					<td><h3>
+							<a href="${pageContext.request.contextPath}/check"
+								style="color: red;">Buy</a>
+						</h3></td>
+					<td><h3>
+							<a
+								href="${pageContext.request.contextPath}/addCart/${empsc.bookId}"
+								style="padding-left: 10px; color: blue;">AddToCart</a>
+						</h3></td>
+				</tr>
+			</c:forEach>
+		</table>
 
+
+	</div>
 </body>
 
 

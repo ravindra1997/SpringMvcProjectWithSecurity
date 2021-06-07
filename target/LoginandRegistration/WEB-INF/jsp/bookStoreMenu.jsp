@@ -51,13 +51,7 @@ h2 {
 </style>
 <body style="background-color:  #ffe6e6;">
 
-	<div style="width: 1405px; height: 140px; background-color:pink;">
-
-		<a href="Home.jsp" style="padding-left: 1150px;" class="log">BackToHome</a>
-		
-		<h1>Welcome To MyStore</h1>
-		<h2>Find a true friend here</h2>
-	</div>
+	
 	<div style="background-color: white; width: 1405px; height: 225px;">
 		<img alt="the silence killer"
 			src="https://i.pinimg.com/originals/6b/69/a7/6b69a781259bec767b81c903581a0ae9.jpg
@@ -288,12 +282,6 @@ h2 {
 					Burbank.</h4>
 			</h4>
 		</h3>
-	</div>
-	<div id="footer">
-		<b style="text-align: center; padding-left: 100; color: gray;"><h1>Find
-				A Book That Defines You</h1></b>
-		<p style="font-family: sans-serif; padding-top: 30px;">@Copyright
-			mystore.ind.ltd</p>
 	</div>
 </body>
 </html>

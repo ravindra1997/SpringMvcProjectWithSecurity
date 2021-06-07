@@ -10,10 +10,12 @@
         http://www.springframework.org/schema/mvc  
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 	<!-- Provide support for component scanning -->
-	<import resource="classpath:hibernate.cfg.xml" /> 
+	<!-- <import resource="classpath:hibernate.cfg.xml" /> -->
 	<context:component-scan base-package="com.techouts.bookStoreDao" />
-	<context:component-scan base-package="com.techouts.bookStore.Model"/>
-	<context:component-scan base-package="com.techouts.bookStoreController"/>
+	<context:component-scan base-package="com.techouts.bookStore.Model" />
+	<context:component-scan base-package="com.techouts.bookStoreController" />
+	<context:component-scan base-package="com.techouts.myconfig" />
+	<!-- <context:component-scan base-package="com.techouts.security" /> -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.tiles3.TilesViewResolver" />
 	<bean id="tilesConfigurer"
@@ -24,17 +26,48 @@
 			</list>
 		</property>
 	</bean>
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/ravindradb" />
+		<property name="username" value="root" />
+		<property name="password" value="techouts" />
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+
+		<!-- <property name="mappingclass"> <list> <value>com.techouts.bookStore.Model.UserInfo></value> 
+			<value>com.techouts.bookStore.Model.ActionAndAdventures></value> <value>com.techouts.bookStore.Model.HistoricalFiction></value> 
+			<value>com.techouts.bookStore.Model.Horror></value> <value>com.techouts.bookStore.Model.RomCom></value> 
+			<value>com.techouts.bookStore.Model.ScienceFiction></value> <value>com.techouts.bookStore.Model.Thriller></value> 
+			</list> </property> -->
+		<property name="packagesToScan" value="com.techouts.bookStore.Model" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
-	
+
 	<bean id="operations" class="com.techouts.bookStoreDao.Operations"></bean>
-	
+
 	<bean id="model" class="org.springframework.web.servlet.ModelAndView">
-	<constructor-arg value="bookStoreMenu"></constructor-arg>
-	
+		<constructor-arg value="bookStoreMenu"></constructor-arg>
+
 	</bean>
 	
+
 </beans>

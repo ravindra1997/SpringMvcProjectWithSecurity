@@ -2,12 +2,9 @@ package com.techouts.bookStore.Model;
 
 import java.util.Arrays;
 
-import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.Lob;
 
 @Entity
 public class RomCom {
@@ -16,9 +13,10 @@ public class RomCom {
 	private String bookName;
 	private String bookAuthor;
 	private double bookPrice;
+	@Column(columnDefinition = "LONGBLOB")
 	private byte[] image;
 
-	@Column(columnDefinition = "LONGBLOB")
+	
 	public byte[] getImage() {
 		return this.image;
 	}

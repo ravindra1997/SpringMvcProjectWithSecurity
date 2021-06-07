@@ -9,8 +9,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<style>
+a {
+	text-decoration: none;
+}
+</style>
 <body>
-	<div>
+	<div align="center">
 		<h2>Added Items To Cart</h2>
 		<table>
 			<c:forEach var="empsc" items="${comm}">
@@ -18,6 +23,7 @@
 					<td><img src="data:image/jpg;base64,${empsc.base64Image}"
 						width="120" height="200" style="padding-left: 20px;"
 						class="bdetail" /></td>
+						
 				</tr>
 			</c:forEach>
 
@@ -26,7 +32,7 @@
 			<c:forEach var="empsc" items="${comm}">
 				<tr>
 					<td><h4>${empsc.bookName}</h4></td>
-					<td style="padding-right: 20px;"><h4>${emps.bookAuthor}</h4></td>
+					<td style="padding-right: 20px; padding-left: 20px;"><h4>${empsc.bookAuthor}</h4></td>
 					<td><h4>${empsc.bookPrice}</h4></td>
 				</tr>
 			</c:forEach>
@@ -35,11 +41,10 @@
 			<c:forEach var="empsc" items="${comm}">
 				<tr>
 					<td><h3>
-							<a href="${pageContext.request.contextPath}check.html">Buy</a>
+							<a href="${pageContext.request.contextPath}/check" style="color: orange;">Buy</a>
 						</h3></td>
 					<td><h3>
-		<a href="${pageContext.request.contextPath}/reshop.html"
-			style="padding-left: 620px;">Continue Shopping</a>
+		<a href="${pageContext.request.contextPath}/reshop.html" style="padding-left: 10px;">ContinueShopping</a>
 	</h3></td>
 				</tr>
 			</c:forEach>

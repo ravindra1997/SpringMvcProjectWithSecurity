@@ -41,7 +41,7 @@ a {
 			<c:forEach var="empsc" items="${comm}">
 				<tr>
 					<td><h3>
-							<a href="${pageContext.request.contextPath}/check.html" style="color: orange;">Buy</a>
+							<a href="${pageContext.request.contextPath}/check" style="color: orange;">Buy</a>
 						</h3></td>
 					<td><h3>
 		<a href="${pageContext.request.contextPath}/reshop.html" style="padding-left: 10px;">ContinueShopping</a>

@@ -58,22 +58,27 @@ public class RegistrationController {
 			return modelAndView;
 		}
 	}
-	@RequestMapping("/login")
-	public String log(Model m) {
-		m.addAttribute("command", new UserInfo());
+	@RequestMapping("/loginToShop")
+	public String loginToShop() {
+		//m.addAttribute("command", new UserInfo());
 		//System.out.println("hello world");
-		return "Login";
+		return "reshop";
 	}
-
-	@RequestMapping("/HomeLogin")
+	@RequestMapping("/login")
+	public String log()
+	{
+		return "hellocustom";
+	}
+	/*@RequestMapping("/HomeLogin")
 	public String logH(Model m) {
 		m.addAttribute("command", new UserInfo());
 		System.out.println("hello world");
 		return "Login";
 	}
-
-	@RequestMapping("/log")
+*/
+	/*@RequestMapping("/log")
 	public ModelAndView login(@RequestParam("phoneNumber") int number, @RequestParam("password") String pass) {
+		System.out.println(number);
 		boolean b = operations.getUser(number, pass);
 		System.out.println(b);
 
@@ -90,13 +95,19 @@ public class RegistrationController {
 			}
 
 		} catch (Exception e) {
-			System.out.println("error");
+			System.out.println("error");*/
+	@RequestMapping("/log")
+	public String logon(@RequestParam("username") int number,@RequestParam("password") String pass,Model m)
+	{
+		
+		System.out.println(number);
+		
 
 			// System.out.println("error");
 
-		}
+		
 
-		return null;
+		return "reshop";
 
 	}
 	@RequestMapping("/check")

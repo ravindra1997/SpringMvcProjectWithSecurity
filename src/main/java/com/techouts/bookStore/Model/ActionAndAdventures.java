@@ -7,8 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class ActionAndAdventures {
-
+public class ActionAndAdventures
+{
 	@Id
 	private int bookId;
 	private String bookName;

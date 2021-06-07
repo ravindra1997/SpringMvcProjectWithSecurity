@@ -42,12 +42,12 @@ th {
 				<td style="padding-right: 20px;"><h4>${emps.bookAuthor}</h4></td>
 				<td><h4>${emps.bookPrice}</h4></td>
 				<td><h4>
-						<a href="ThbuyBook/${emps.bookId}">Buy</a>
+						<a href="TbuyBook/${emps.bookId}">Buy</a>
 
 					</h4></td>
 
 				<td><h4>
-						<a href="ThaddCart/${emps.bookId}">AddToCart</a>
+						<a href="TaddCart/${emps.bookId}">AddToCart</a>
 					</h4></td>
 			</tr>
 		</c:forEach>

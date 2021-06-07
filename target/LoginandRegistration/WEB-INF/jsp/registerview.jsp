@@ -39,6 +39,7 @@ h2 {
 	<div style="width: 1390px; height: 140px; background-color: pink;">
 
 		<a href="Home.jsp" style="padding-left: 1150px;" class="log">BackToHome</a>
+		<a href="login.html" style="padding-left: 10px;" class="log">Login</a>
 		<h1>Welcome To MyStore</h1>
 		<h2>Find a true friend here</h2>
 	</div>

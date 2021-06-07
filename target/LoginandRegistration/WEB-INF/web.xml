@@ -12,10 +12,15 @@
 		<servlet-name>Dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	<!-- <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>   
-        classpath:hibernate.cfg.xml                     
-        </param-value>
-    </context-param> -->
+	<!-- <context-param> <param-name>contextConfigLocation</param-name> <param-value> 
+		classpath:hibernate.cfg.xml </param-value> </context-param> -->
+	<!-- <listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+        /WEB-INF/your-spring-config-file.xml
+    </param-value>
+	</context-param> -->
 </web-app>

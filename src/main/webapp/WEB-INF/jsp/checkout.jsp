@@ -36,6 +36,11 @@
 		<a href="${pageContext.request.contextPath}/reshop.html"
 			style="padding-left: 620px;">Continue Shopping</a>
 	</h3>
+	</div>
+	<div align="center">
+	<form:form action="logout" method="POST">
+	<h4><input type="submit" value="Logout"></h4>
+	</form:form>
 
 </div>
 

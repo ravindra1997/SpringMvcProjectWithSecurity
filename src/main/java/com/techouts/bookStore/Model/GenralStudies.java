@@ -2,12 +2,9 @@ package com.techouts.bookStore.Model;
 
 import java.util.Arrays;
 
-import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.Lob;
 
 @Entity
 public class GenralStudies {

@@ -31,7 +31,7 @@ h1 {
 
 #footer {
 	color: #Od1137;
-	width: 1405px;
+	width: 1343px;
 	height: 127px;
 	background-color: gray;
 	padding: 30px;
@@ -57,11 +57,11 @@ h2 {
 </style>
 <body style="background-color: pink;">
 
-	<div style="width: 1405px; height: 140px;">
+	<div style="width: 1270px; height: 140px;">
 
 		<!-- <a href="bookStoreMenu.jsp" style="padding-left: 1150px;" class="log">Genres</a> -->
-		<a href="regist.html" style="padding-left: 1150px;" class="log">Register</a>
-		<a href="login.html" style="padding-left: 10px;" class="log">Login</a>
+		<a href="regist" style="padding-left: 1150px;" class="log">Register</a>
+		<a href="loginToShop" style="padding-left: 10px;" class="log">Login</a>
 		<h1>Welcome To MyStore</h1>
 		<h2>Find a true friend here</h2>
 
@@ -101,7 +101,7 @@ h2 {
 			src="https://i.harperapps.com/covers/9780062426956/x190.jpg"
 			style="width: 120px; height: 195px; float: right; padding-top: 13px;">
 		<h3>
-			<a href="HomeLogin.html"
+			<a href="ActAndAdv.html"
 				style="float: left; padding-left: 150px; padding-top: 40px; color: navy; font-family: sans-serif;">ActionandAdventure</a><br>
 			<p
 				style="padding-top: 40px; padding-left: 10px; font-family: monospace;">Adventure
@@ -135,7 +135,7 @@ h2 {
 			style="width: 400px; height: 200px; float: left; padding-top: 10px; padding-left: 10px;">
 
 		<h3>
-			<a href="HomeLogin.html"
+			<a href="historicalfiction.html"
 				style="float: left; padding-top: 40px; color: maroon; font-family: sans-serif;">HistoricalFiction</a><br>
 			<h4
 				style="padding-top: 40px; padding-left: 10px; font-family: cursive;">
@@ -173,7 +173,7 @@ h2 {
 			-1588005156.jpg?crop=0.9935419771485344xw:1xh;center,top&resize=480:*"
 			style="width: 120px; height: 195px; float: right; padding-top: 13px;">
 		<h3>
-			<a href="HomeLogin.html"
+			<a href="romcom.html"
 				style="float: right; padding-right: 150px; padding-top: 40px; color: threedshadow; font-family: cursive;">RomCom</a><br>
 			<p style="padding-top: 40px; padding-left: 10px; font-style: italic;">i
 				want to spend time with you less,we dont need to put a label on it,
@@ -205,7 +205,7 @@ h2 {
 			src="https://static.seattletimes.com/wp-content/uploads/2019/02/02152019_books_150015-780x1195.jpg"
 			style="width: 120px; height: 195px; float: right; padding-top: 13px;">
 		<h3>
-			<a href="HomeLogin.html"
+			<a href="sciencefiction.html"
 				style="float: left; padding-left: 150px; padding-top: 40px; color: maroon; font-family: sans-serif;">ScienceFiction</a><br>
 			<p
 				style="padding-top: 40px; padding-left: 10px; font-family: cursive;">the
@@ -238,7 +238,7 @@ h2 {
 			style="width: 400px; height: 200px; float: left; padding-top: 10px; padding-left: 10px;">
 
 		<h3>
-			<a href="HomeLogin.html"
+			<a href="thriller.html"
 				style="float: left; padding-top: 40px; color: maroon; font-family: sans-serif;">Thriller</a><br>
 			<h4
 				style="padding-top: 40px; padding-left: 10px; font-style: inherit;">
@@ -264,7 +264,7 @@ h2 {
 			sub-buzz-22190-1538769945-1.jpg?downsize=900:*&output-format=auto&output-quality=auto"
 			style="width: 120px; height: 195px; float: right; padding-top: 13px;">
 		<h3>
-			<a href="HomeLogin.html"
+			<a href="horror.html"
 				style="float: right; padding-right: 150px; padding-top: 40px; color: red; font-family: cursive;">Horror</a><br>
 			<p style="padding-top: 40px; padding-left: 10px; font-style: italic;">Horror
 				is not a genre but it's an emotion.
@@ -293,7 +293,7 @@ h2 {
 
 
 		<h3>
-			<a href="HomeLogin.html"
+			<a href="general.html"
 				style="float: left; padding-top: 40px; color: maroon; font-family: sans-serif;">General</a><br>
 			<h4
 				style="padding-top: 40px; padding-left: 10px; font-style: inherit;">

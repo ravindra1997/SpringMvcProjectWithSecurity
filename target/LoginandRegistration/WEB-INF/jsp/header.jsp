@@ -17,7 +17,7 @@ h1 {
 	font-family: sans-serif;
 	padding-left: 15px;
 	padding-left: 15px;
-	color: #f5fOe1;
+	color: black;
 }
 h2 {
 	text-align: center;
@@ -29,7 +29,7 @@ h2 {
 <body>
 <div style="width: 1390px; height: 140px; background-color: pink;">
 
-		<a href="Home.jsp" style="padding-left: 1150px;" class="log">BackToHome</a>
+		<a href="${pageContext.request.contextPath}/Home.jsp" style="padding-left: 1150px;" class="log">BackToHome</a>
 		<h1>Welcome To MyStore</h1>
 		<h2>Find a true friend here</h2>
 	</div>
